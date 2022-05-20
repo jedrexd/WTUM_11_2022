@@ -1,0 +1,195 @@
+Running for none.csv:
+Model: LinearRegression()
+Score: 0.828705039202044
+----------
+Model: RandomForestRegressor()
+Best params: {'min_samples_split': 2, 'n_estimators': 700}
+Score: 0.8760273648463162
+----------
+Model: BaggingRegressor()
+Best params: {'max_samples': 87, 'n_estimators': 120}
+Score: 0.8469585545437484
+----------
+Model: BayesianRidge()
+Best params: {'alpha_1': 1e-08, 'alpha_2': 1, 'lambda_1': 1, 'lambda_2': 1e-06, 'n_iter': 10}
+Score: 0.8777262244923347
+----------
+Model: ARDRegression()
+Best params: {'alpha_1': 1e-08, 'alpha_2': 1, 'lambda_1': 1, 'lambda_2': 0.0001, 'n_iter': 5}
+Score: 0.87386504498241
+----------
+For file none.csv - best result is given by:
+{'classifier': GridSearchCV(estimator=BayesianRidge(), n_jobs=-1,
+             param_grid={'alpha_1': [1e-08, 1e-06, 0.0001],
+                         'alpha_2': [1e-06, 0.0001, 0.01, 1],
+                         'lambda_1': [1e-06, 0.0001, 0.01, 1],
+                         'lambda_2': [1e-06, 0.0001],
+                         'n_iter': [1, 5, 10, 20, 50, 100, 300]}), 'score': 0.8777262244923347, 'best_estimator': BayesianRidge(alpha_1=1e-08, alpha_2=1, lambda_1=1, n_iter=10)}
+
+
+Running for mode_PCA.csv:
+Model: LinearRegression()
+Score: 0.7015623435959955
+----------
+Model: RandomForestRegressor()
+Best params: {'min_samples_split': 4, 'n_estimators': 500}
+Score: 0.8064276812080726
+----------
+Model: BaggingRegressor()
+Best params: {'max_samples': 87, 'n_estimators': 140}
+Score: 0.7826031487695715
+----------
+Model: BayesianRidge()
+Best params: {'alpha_1': 1e-08, 'alpha_2': 1, 'lambda_1': 1, 'lambda_2': 1e-06, 'n_iter': 10}
+Score: 0.7087873679217995
+----------
+Model: ARDRegression()
+Best params: {'alpha_1': 0.01, 'alpha_2': 1, 'lambda_1': 1, 'lambda_2': 0.0001, 'n_iter': 5}
+Score: 0.7071314346605816
+----------
+For file mode_PCA.csv - best result is given by:
+{'classifier': GridSearchCV(estimator=RandomForestRegressor(), n_jobs=-1,
+             param_grid={'min_samples_split': range(2, 10, 2),
+                         'n_estimators': [300, 500, 700, 900, 1000]}), 'score': 0.8064276812080726, 'best_estimator': RandomForestRegressor(min_samples_split=4, n_estimators=500)}
+
+
+Running for mode_SFM.csv:
+Model: LinearRegression()
+Score: 0.8867713100189468
+----------
+Model: RandomForestRegressor()
+Best params: {'min_samples_split': 6, 'n_estimators': 900}
+Score: 0.8647310594578084
+----------
+Model: BaggingRegressor()
+Best params: {'max_samples': 84, 'n_estimators': 100}
+Score: 0.8357673191875375
+----------
+Model: BayesianRidge()
+Best params: {'alpha_1': 1e-08, 'alpha_2': 1, 'lambda_1': 1, 'lambda_2': 1e-06, 'n_iter': 5}
+Score: 0.8873539634153347
+----------
+Model: ARDRegression()
+Best params: {'alpha_1': 1e-08, 'alpha_2': 1, 'lambda_1': 1, 'lambda_2': 0.01, 'n_iter': 10}
+Score: 0.8868449826314493
+----------
+For file mode_SFM.csv - best result is given by:
+{'classifier': GridSearchCV(estimator=BayesianRidge(), n_jobs=-1,
+             param_grid={'alpha_1': [1e-08, 1e-06, 0.0001],
+                         'alpha_2': [1e-06, 0.0001, 0.01, 1],
+                         'lambda_1': [1e-06, 0.0001, 0.01, 1],
+                         'lambda_2': [1e-06, 0.0001],
+                         'n_iter': [1, 5, 10, 20, 50, 100, 300]}), 'score': 0.8873539634153347, 'best_estimator': BayesianRidge(alpha_1=1e-08, alpha_2=1, lambda_1=1, n_iter=5)}
+
+
+Running for mode_SFS.csv:
+Model: LinearRegression()
+Score: 0.8065443857549701
+----------
+Model: RandomForestRegressor()
+Best params: {'min_samples_split': 2, 'n_estimators': 300}
+Score: 0.8625925095019631
+----------
+Model: BaggingRegressor()
+Best params: {'max_samples': 84, 'n_estimators': 100}
+Score: 0.8281327380979027
+----------
+Model: BayesianRidge()
+Best params: {'alpha_1': 1e-08, 'alpha_2': 1, 'lambda_1': 1, 'lambda_2': 1e-06, 'n_iter': 10}
+Score: 0.8098891738731993
+----------
+Model: ARDRegression()
+Best params: {'alpha_1': 1, 'alpha_2': 1, 'lambda_1': 1, 'lambda_2': 0.0001, 'n_iter': 5}
+Score: 0.7977461770840197
+----------
+For file mode_SFS.csv - best result is given by:
+{'classifier': GridSearchCV(estimator=RandomForestRegressor(), n_jobs=-1,
+             param_grid={'min_samples_split': range(2, 10, 2),
+                         'n_estimators': [300, 500, 700, 900, 1000]}), 'score': 0.8625925095019631, 'best_estimator': RandomForestRegressor(n_estimators=300)}
+
+
+Running for remove_PCA.csv:
+Model: LinearRegression()
+Score: -3.459073494082474e+20
+----------
+Model: RandomForestRegressor()
+Best params: {'min_samples_split': 2, 'n_estimators': 1000}
+Score: 0.8542946580885349
+----------
+Model: BaggingRegressor()
+Best params: {'max_samples': 84, 'n_estimators': 100}
+Score: 0.8152728934854876
+----------
+Model: BayesianRidge()
+Best params: {'alpha_1': 1e-08, 'alpha_2': 1, 'lambda_1': 1, 'lambda_2': 1e-06, 'n_iter': 10}
+Score: 0.8792768475636968
+----------
+Model: ARDRegression()
+Best params: {'alpha_1': 1e-08, 'alpha_2': 1, 'lambda_1': 1, 'lambda_2': 0.01, 'n_iter': 1}
+Score: 0.8719988873309907
+----------
+For file remove_PCA.csv - best result is given by:
+{'classifier': GridSearchCV(estimator=BayesianRidge(), n_jobs=-1,
+             param_grid={'alpha_1': [1e-08, 1e-06, 0.0001],
+                         'alpha_2': [1e-06, 0.0001, 0.01, 1],
+                         'lambda_1': [1e-06, 0.0001, 0.01, 1],
+                         'lambda_2': [1e-06, 0.0001],
+                         'n_iter': [1, 5, 10, 20, 50, 100, 300]}), 'score': 0.8792768475636968, 'best_estimator': BayesianRidge(alpha_1=1e-08, alpha_2=1, lambda_1=1, n_iter=10)}
+
+
+Running for remove_SFM.csv:
+Model: LinearRegression()
+Score: 0.8591931865076463
+----------
+Model: RandomForestRegressor()
+Best params: {'min_samples_split': 2, 'n_estimators': 300}
+Score: 0.8427483251263956
+----------
+Model: BaggingRegressor()
+Best params: {'max_samples': 87, 'n_estimators': 110}
+Score: 0.819782308386863
+----------
+Model: BayesianRidge()
+Best params: {'alpha_1': 1e-08, 'alpha_2': 1, 'lambda_1': 1, 'lambda_2': 1e-06, 'n_iter': 5}
+Score: 0.8597688214779036
+----------
+Model: ARDRegression()
+Best params: {'alpha_1': 1e-08, 'alpha_2': 1, 'lambda_1': 1, 'lambda_2': 0.01, 'n_iter': 10}
+Score: 0.859406197497491
+----------
+For file remove_SFM.csv - best result is given by:
+{'classifier': GridSearchCV(estimator=BayesianRidge(), n_jobs=-1,
+             param_grid={'alpha_1': [1e-08, 1e-06, 0.0001],
+                         'alpha_2': [1e-06, 0.0001, 0.01, 1],
+                         'lambda_1': [1e-06, 0.0001, 0.01, 1],
+                         'lambda_2': [1e-06, 0.0001],
+                         'n_iter': [1, 5, 10, 20, 50, 100, 300]}), 'score': 0.8597688214779036, 'best_estimator': BayesianRidge(alpha_1=1e-08, alpha_2=1, lambda_1=1, n_iter=5)}          
+
+
+Running for remove_SFS.csv:
+Model: LinearRegression()
+Score: 0.8648862613375329
+----------
+Model: RandomForestRegressor()
+Best params: {'min_samples_split': 6, 'n_estimators': 300}
+Score: 0.8622325957646865
+----------
+Model: BaggingRegressor()
+Best params: {'max_samples': 87, 'n_estimators': 80}
+Score: 0.8298899070677637
+----------
+Model: BayesianRidge()
+Best params: {'alpha_1': 1e-08, 'alpha_2': 1, 'lambda_1': 1, 'lambda_2': 1e-06, 'n_iter': 10}
+Score: 0.8719959475300737
+----------
+Model: ARDRegression()
+Best params: {'alpha_1': 1, 'alpha_2': 0.01, 'lambda_1': 1, 'lambda_2': 1e-06, 'n_iter': 5}
+Score: 0.8648687960357302
+----------
+For file remove_SFS.csv - best result is given by:
+{'classifier': GridSearchCV(estimator=BayesianRidge(), n_jobs=-1,
+             param_grid={'alpha_1': [1e-08, 1e-06, 0.0001],
+                         'alpha_2': [1e-06, 0.0001, 0.01, 1],
+                         'lambda_1': [1e-06, 0.0001, 0.01, 1],
+                         'lambda_2': [1e-06, 0.0001],
+                         'n_iter': [1, 5, 10, 20, 50, 100, 300]}), 'score': 0.8719959475300737, 'best_estimator': BayesianRidge(alpha_1=1e-08, alpha_2=1, lambda_1=1, n_iter=10)}             
